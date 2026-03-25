@@ -136,6 +136,34 @@ Now login as this user to access admin-level features.
 
 ---
 
+## 📊 Database Schema
+
+### Users Table
+
+| Column      | Type        | Description              |
+|------------|------------|--------------------------|
+| id         | UUID / INT | Primary Key              |
+| name       | TEXT       | User's name              |
+| email      | TEXT       | User email               |
+| password   | TEXT       | Hashed password          |
+| role       | TEXT       | user / admin             |
+| created_at | TIMESTAMP  | Account creation time    |
+
+---
+
+### Tasks Table
+
+| Column      | Type        | Description              |
+|------------|------------|--------------------------|
+| id         | UUID / INT | Primary Key              |
+| title      | TEXT       | Task title               |
+| description| TEXT       | Task details             |
+| status     | TEXT       | pending / completed      |
+| user_id    | UUID / INT | Foreign key (Users)      |
+| created_at | TIMESTAMP  | Task creation time       |
+
+---
+
 ## Authentication APIs
 
 | Method | Endpoint              | Description   |
