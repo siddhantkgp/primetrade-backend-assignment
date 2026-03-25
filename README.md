@@ -41,7 +41,7 @@ repo/
 
 ```bash
 git clone https://github.com/siddhantkgp/primetrade-backend-assignment.git
-cd primetrade-backend-assignmen
+cd primetrade-backend-assignment
 ```
 
 ---
